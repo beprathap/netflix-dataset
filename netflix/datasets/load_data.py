@@ -16,6 +16,7 @@ ROLE      = "ACCOUNTADMIN"
 TITLES_CSV  = r"/Users/beprathap/workspace/netflix-dataset/netflix/datasets/titles.csv"
 CREDITS_CSV = r"/Users/beprathap/workspace/netflix-dataset/netflix/datasets/credits.csv"
 
+# Create Snowflake connection
 def create_connection():
     conn = snow.connect(
         user=USER,
