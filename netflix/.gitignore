@@ -1,4 +1,49 @@
+# --- Secrets & env ---
+.env
+*.env
+.env.*
 
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.build/
+dist/
+build/
+.python-version
+.venv/
+venv/
+ENV/
+
+# --- Caches & tooling ---
+.cache/
+.mypy_cache/
+.pytest_cache/
+coverage/
+.coverage
+.coverage.*
+
+# --- OS/Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- dbt ---
 target/
 dbt_packages/
 logs/
+
+# --- Snowflake (local caches) ---
+.cache/snowflake/
+~/.cache/snowflake/
+
+# --- Node (if any front-end tooling) ---
+node_modules/
