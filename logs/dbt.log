@@ -91,3 +91,63 @@ Happy modeling!
 [0m19:07:31.488113 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m19:07:31.488440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106020100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10885d250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b1d310>]}
 [0m19:07:31.488798 [debug] [MainThread]: Flushing usage events
+[0m15:31:00.886019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102096370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e2ffa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ea2370>]}
+
+
+============================== 15:31:00.888425 | c1b8c9ac-c9b8-48d0-a0d5-4880c260ea5c ==============================
+[0m15:31:00.888425 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:31:00.888741 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/beprathap/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:31:00.889034 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/beprathap/workspace/netflix-dataset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:31:00.890609 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.04115258, "process_user_time": 0.591261, "process_kernel_time": 0.095347, "process_mem_max_rss": "84688896", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:31:00.890824 [debug] [MainThread]: Command `dbt run` failed at 15:31:00.890782 after 0.04 seconds
+[0m15:31:00.890987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102096370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1030e65e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e8e820>]}
+[0m15:31:00.891140 [debug] [MainThread]: Flushing usage events
+[0m15:33:18.330958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e47370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068d3430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106946190>]}
+
+
+============================== 15:33:18.333153 | ca93c4c8-881f-49d5-914d-a6d25d798787 ==============================
+[0m15:33:18.333153 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:33:18.333466 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/beprathap/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:33:18.333757 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/beprathap/workspace/netflix-dataset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:33:18.335422 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.037902206, "process_user_time": 0.512621, "process_kernel_time": 0.062552, "process_mem_max_rss": "84328448", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:33:18.335645 [debug] [MainThread]: Command `dbt run` failed at 15:33:18.335598 after 0.04 seconds
+[0m15:33:18.335812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e47370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10690d220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106933280>]}
+[0m15:33:18.335969 [debug] [MainThread]: Flushing usage events
+[0m15:33:45.631432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064667c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c18dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f6e430>]}
+
+
+============================== 15:33:45.633613 | 30804e5b-f7de-448b-abfb-527f40e2f1c5 ==============================
+[0m15:33:45.633613 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:33:45.633929 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/beprathap/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:33:45.634206 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/beprathap/workspace/netflix-dataset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:33:45.635710 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.03514746, "process_user_time": 0.512466, "process_kernel_time": 0.061349, "process_mem_max_rss": "84361216", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:33:45.635961 [debug] [MainThread]: Command `dbt run` failed at 15:33:45.635908 after 0.04 seconds
+[0m15:33:45.636147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064667c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f3f3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f59700>]}
+[0m15:33:45.636327 [debug] [MainThread]: Flushing usage events
+[0m15:35:15.505674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a7b370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044cb430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10453e190>]}
+
+
+============================== 15:35:15.507827 | 7c4ca0b6-fa1c-4792-a981-8eb56c5c8473 ==============================
+[0m15:35:15.507827 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:35:15.508139 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/beprathap/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:35:15.508424 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/beprathap/workspace/netflix-dataset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:35:15.510177 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.035571165, "process_user_time": 0.524135, "process_kernel_time": 0.064753, "process_mem_max_rss": "83951616", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:35:15.510382 [debug] [MainThread]: Command `dbt run` failed at 15:35:15.510341 after 0.04 seconds
+[0m15:35:15.510552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a7b370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104505220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10452b280>]}
+[0m15:35:15.510723 [debug] [MainThread]: Flushing usage events
