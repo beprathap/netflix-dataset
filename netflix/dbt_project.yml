@@ -21,14 +21,25 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # Configuring models
 models:
-    netflix:
-        stage:
-            +materialized: table
-        dimension:
-            +materialized: table
-        fact:
-            +materialized: table
-            
+  netflix_project:
+    # Default every model in this package to the curated transform schema
+    +schema: DBT_TRANSFORM
+
+    stage:
+      # Stage layer should materialize as tables in PROD.DBT_TRANSFORM
+      +materialized: table
+      +schema: DBT_TRANSFORM
+
+    dimension:
+      # Dimension layer is published to the PROD analytics schema
+      +materialized: table
+      +schema: DBT_PROD
+
+    fact:
+      # Fact layer shares the same PROD analytics schema
+      +materialized: table
+      +schema: DBT_PROD
+
 vars:
-    titles_raw: 'PROD.DBT_RAW.TITLES'
-    credits_raw: 'PROD.DBT_RAW.CREDITS'
+  titles_raw: 'PROD.DBT_RAW.TITLES'
+  credits_raw: 'PROD.DBT_RAW.CREDITS'
