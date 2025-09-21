@@ -1,10 +1,15 @@
 ### Project Description
-
 This project aims to provide a comprehensive understanding of the DBT (Data Build Tool). We will explore data modeling and logging, which are essential aspects of DBT. To demonstrate how DBT can be used in real-life scenarios, we will be using Netflix movies and series data stored in Snowflake. By using DBT with Snowflake, we will show how businesses can leverage these tools to solve complex data problems. Through this project, we will gain insight into the various features of DBT and how they can be used to build robust data pipelines. With this knowledge, users can learn to optimize their data transformation and modeling workflows, making them more efficient and effective for their organization's needs.
 
 - Language: Python, SQL
 - Tool: DBT
 - Database: Snowflake
+
+### Netflix Datasets
+- Nelix Titles Dataset: Contains metadata about movies and TV shows, including tle,
+genre, producon, and rangs.
+- Nelix Credits Dataset: Provides informaon on person_id including characters, and
+their roles in various producons.
 
 ### Architecture Diagram:
 
