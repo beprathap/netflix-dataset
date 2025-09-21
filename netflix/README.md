@@ -6,7 +6,7 @@ Language: Python, SQL
 Tool: DBT
 Database: Snowflake
 
-Architecture Diagram:
+### Architecture Diagram:
 
 ![alt text](image.png)
 
