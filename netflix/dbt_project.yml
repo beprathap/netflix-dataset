@@ -40,6 +40,11 @@ models:
       +materialized: table
       +schema: DBT_PROD
 
+tests:
+  netflix_project:
+    +database: PROD
+    +schema: DBT_PROD
+
 vars:
   titles_raw: 'PROD.DBT_RAW.TITLES'
   credits_raw: 'PROD.DBT_RAW.CREDITS'
