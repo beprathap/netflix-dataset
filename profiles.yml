@@ -1,0 +1,30 @@
+Netflix:
+  outputs:
+    default: 
+      type: snowflake
+      account: yi43251.us-east-2.aws
+      user: BEPRATHAP
+      password: <>
+      role: ACCOUNTADMIN
+      database: PROD
+      warehouse: COMPUTE_WH
+      schema: DBT_RAW
+    dev:
+      type: snowflake
+      account: yi43251.us-east-2.aws
+      user: BEPRATHAP
+      password: <>
+      role: ACCOUNTADMIN
+      database: PROD
+      warehouse: COMPUTE_WH
+      schema: DBT_TRANSFORM
+    prod:
+      type: snowflake
+      account: yi43251.us-east-2.aws
+      user: BEPRATHAP
+      password: <>
+      role: ACCOUNTADMIN
+      database: PROD
+      warehouse: COMPUTE_WH
+      schema: DBT_PROD
+
