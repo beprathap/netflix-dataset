@@ -151,3 +151,18 @@ Runtime Error
 [0m15:35:15.510382 [debug] [MainThread]: Command `dbt run` failed at 15:35:15.510341 after 0.04 seconds
 [0m15:35:15.510552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a7b370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104505220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10452b280>]}
 [0m15:35:15.510723 [debug] [MainThread]: Flushing usage events
+[0m19:24:27.768708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f552b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079ee8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a671c0>]}
+
+
+============================== 19:24:27.770944 | f61489af-e06c-410d-a4d5-1f94f6a7a8d9 ==============================
+[0m19:24:27.770944 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:24:27.771237 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/beprathap/workspace/netflix-dataset', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt test --target prod --select tests/SHOW_DETAILS_NOT_NULL.sql', 'send_anonymous_usage_stats': 'True'}
+[0m19:24:27.771530 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/beprathap/workspace/netflix-dataset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:24:27.773099 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.038457543, "process_user_time": 0.615857, "process_kernel_time": 0.115617, "process_mem_max_rss": "84852736", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:24:27.773351 [debug] [MainThread]: Command `dbt test` failed at 19:24:27.773305 after 0.04 seconds
+[0m19:24:27.773524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f552b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a0afd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106693a60>]}
+[0m19:24:27.773691 [debug] [MainThread]: Flushing usage events

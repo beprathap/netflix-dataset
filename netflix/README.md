@@ -15,6 +15,11 @@ their roles in various producons.
 
 ![alt text](image.png)
 
+### Problem Statement
+- In terms of content which movies/series dominate market?
+- Who are top actors and directors dominating specific genres?
+- Percentage share of movies/series on Netflix space
+
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
